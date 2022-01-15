@@ -475,15 +475,12 @@ html {
 }
 .contact .social a:first-of-type:hover i{
   color: red;
-  border-bottom: 2px solid red;
 }
 .contact .social a:nth-child(2):hover i{
   color: steelblue;
-  border-bottom: 2px solid steelblue;
 }
 .contact .social a:last-of-type:hover i{
-  color: var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+  color: #10cab7;
 }
 @media (max-width: 767px) {
   .contact .info .label{
