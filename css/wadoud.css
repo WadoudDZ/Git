@@ -460,27 +460,48 @@ html {
 .contact .social {
   justify-content: center;
   margin-top: 20px;
+  display: flex;
   font-size: 16px;
   flex-wrap: wrap;
+  align-items: center;
   font-weight: 800;
-  max-width: 230px;
   margin: 20px auto;
 }
 .contact .social a i {
-  margin-left: 20px;
   font-size: 23px;
-  padding-top: 11px;
-  padding-bottom: 7px;
   color: var(--secondary-color);
+  transition: var(--main-transition);
 }
-.contact .social a:first-of-type:hover i{
-  color: red;
+.contact .social a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 20px 10px;
+  padding: 10px 8px;
+  transition: var(--main-transition);
+  width: 120px;
 }
-.contact .social a:nth-child(2):hover i{
-  color: steelblue;
+.contact .social .find-us {
+  flex-basis: 100%;
 }
-.contact .social a:last-of-type:hover i{
-  color: #10cab7;
+.contact .social a:first-of-type:hover i, 
+.contact .social a:first-of-type:hover{
+  background-color: red;
+  color: white;
+}
+.contact .social a:nth-of-type(2):hover i,
+.contact .social a:nth-of-type(2):hover{
+  background-color: steelblue;
+  color: white;
+}
+.contact .social a:last-of-type:hover i,
+.contact .social a:last-of-type:hover{
+  background-color: #10cab7;
+  color: white;
 }
 @media (max-width: 767px) {
   .contact .info .label{
